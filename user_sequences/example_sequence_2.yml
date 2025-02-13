@@ -1,0 +1,7 @@
+# Example Sequence that Opens Spotlight on Mac, and types "safari"
+name: example_sequence_2
+commands:
+  - hotkey: ["command", "space"]
+  - pause: 1000
+  - press: "s"
+  - type: "safari"

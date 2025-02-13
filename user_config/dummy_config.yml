@@ -1,0 +1,11 @@
+## CHANGING THIS FILE WILL NOT AFFECT THE PROGRAM
+
+# Configuration file for keyboard input sequence program
+
+# Number of seconds to wait before starting a sequence
+# This delay gives you time to focus the correct window
+sequence_start_delay: 3
+
+# Whether to show example sequences in the program
+# Set to false to hide example_sequence_*.yml files
+show_example_sequences: true 
