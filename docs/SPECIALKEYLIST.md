@@ -34,10 +34,10 @@ Below is a comprehensive list of special keys that can be used with PyAutoGUI's 
 
 ## Modifier Keys
 - `ctrl` (Control)
-- `alt`
+- `alt` (Mac 'Option' key)
 - `shift`
 - `win` (Windows key)
-- `command` (Mac command key)
+- `command` (Mac 'Command' Key)
 
 ## Numeric Keypad
 - `num0` through `num9`

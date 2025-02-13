@@ -1,0 +1,10 @@
+# Example Sequence that demonstrates different typing speeds
+# Beneficial when your on a slow connection to a Remote Desktop
+# That can register key presses fast enough
+name: example_sequence_3
+commands:
+    - type: ["username123", 0.02]   # Type with a 20ms delay between each character
+    - press: "tab"
+    - type: "password123"           # Types (as fast as systemly possible)
+    - hotkey: ["space", "space"]
+    - type: ["This types... very... slowly...", 0.1] # Type with a 100ms delay between each character

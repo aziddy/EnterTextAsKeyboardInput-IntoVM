@@ -28,10 +28,18 @@ env/
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 
 # OS specific
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Config
+config.yml
+
+# Ignore user sequences except example
+user_sequences/*
+!user_sequences/example_sequence_1.yml 
+!user_sequences/example_sequence_2.yml 
+!user_sequences/example_sequence_3.yml   

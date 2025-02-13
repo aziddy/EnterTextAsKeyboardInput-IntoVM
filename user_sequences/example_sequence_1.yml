@@ -1,0 +1,8 @@
+# Example sequence that types "hello worlds"
+name: example_sequence_1
+commands:
+  - type: "hello"
+  - press: "space"
+  - type: "world"
+  - pause: 1000
+  - type: "s"
