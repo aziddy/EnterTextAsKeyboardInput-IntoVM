@@ -1,6 +1,6 @@
 # EnterTextAsKeyboardInput-IntoVM
 
-A Python utility to automatically type text as keyboard input anywhere including remote Windows VM
+A Python utility to automatically type text as keyboard input anywhere including Copy/Paste Restricted VM's
 
 ## Quick Start
 
