@@ -2,6 +2,11 @@
 
 A Python utility to automatically type text as keyboard input anywhere including Copy/Paste Restricted VM's
 
+<div align="center">
+  <img src="./media/demo_1_14feb2025.gif" alt="Demo" width="500">
+</div>
+
+
 ## Quick Start
 
 See 
