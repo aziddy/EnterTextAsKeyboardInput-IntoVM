@@ -1,14 +1,6 @@
 import pyautogui
 import time
 from dotenv import load_dotenv
-import os
-import yaml
-import sys
-import readline
-import platform
-import glob
-import pathlib
-from util.delayed_hotkey import delayed_hotkey
 from user_config import load_config
 from util.colors import RED, RESET
 
@@ -29,9 +21,7 @@ def execute_command(command):
                         print_error("Type with interval must be [text, interval_in_seconds]")
                         return
                     text, interval = value
-                    for char in text:
-                        pyautogui.write(char)
-                        time.sleep(float(interval))
+                    pyautogui.write(text, interval)
                 else:
                     pyautogui.write(value)
             elif cmd_type == 'press':
@@ -40,8 +30,7 @@ def execute_command(command):
                 if not isinstance(value, list):
                     print_error(f"Hotkey value must be a list of keys, got: {value}")
                     return
-                # Use our custom implementation with configurable delays
-                delayed_hotkey(value, press_delay=50, release_delay=2)
+                pyautogui.hotkey(*value, interval=0.05)
             elif cmd_type == 'pause':
                 # Convert milliseconds to seconds for time.sleep
                 time.sleep(float(value) / 1000)
