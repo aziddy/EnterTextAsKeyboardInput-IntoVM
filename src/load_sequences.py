@@ -29,7 +29,7 @@ def load_sequences(directory=USER_SEQ_PATH):
         yaml_files = [f for f in yaml_files if not os.path.basename(f).startswith('example_sequence_')]
     
     if not yaml_files:
-        print("No .yml files found in user_sequences directory")
+        print(f"{RED}No .yml files found in user_sequences directory (Are you running from project root?){RESET}")
         return sequences
 
     print("\nLoading sequences...")
